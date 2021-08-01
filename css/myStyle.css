@@ -1,0 +1,40 @@
+.grid{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.image{
+    width: inherit;
+    height: 300px;
+    background-image: url(../images/image_2.jpg);
+}
+.child{
+    height: max-content;
+}
+
+.col-md-4{
+    width: 100%;
+}
+h3{
+    font-weight: bold;
+    color: black;
+}
+button{
+    color: white;
+}
+h6{
+    font-size: 15px;
+}
+
+@media screen and (max-width:570px){
+    .grid{
+        display: block;
+    }
+    .child{
+        margin-bottom: 50px;
+    }
+    h6{
+        font-size: 7px;
+    }
+}
